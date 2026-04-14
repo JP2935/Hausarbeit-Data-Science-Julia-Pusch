@@ -1,0 +1,96 @@
+{
+  "run_timestamp": "2026-03-11T18:39:48",
+  "COURT_ROOT": "/Users/juliapusch/Documents/Hausarbeit_Data_Science/Corona_Urteile/EuGH",
+  "OUTPUT_PREFIX": "eugh",
+  "COPY_PDFS_TO_LABEL_FOLDERS": true,
+  "SORTED_DIR_NAME": "sorted",
+  "EARLY_CHARS": 6000,
+  "EARLY_MULTIPLIER": 1.7,
+  "weights": {
+    "WEIGHT_TRIGGER": 2,
+    "WEIGHT_A": 5,
+    "WEIGHT_B": 3,
+    "WEIGHT_C": 1,
+    "WEIGHT_PHRASE": 6,
+    "WEIGHT_COOC": 2
+  },
+  "thresholds": {
+    "THRESH_A": 12,
+    "THRESH_B": 6
+  },
+  "strict_D": {
+    "ENABLE_STRICT_D": true,
+    "STRICT_D_MAX_TRIGGER_HITS": 1,
+    "STRICT_D_REQUIRE_NO_EARLY_TRIGGER": true
+  },
+  "keyword_lists": {
+    "TRIGGERS": [
+      "\\bcorona\\b",
+      "\\bcovid\\b",
+      "\\bcovid[-\\s]?19\\b",
+      "sars[-\\s]?cov[-\\s]?2",
+      "\\bpandemie\\b",
+      "\\binfektionsschutzgesetz\\b",
+      "\\bifsg\\b",
+      "\\blockdown\\b",
+      "\\bquarant(?:ä|ae)ne\\b",
+      "\\bausgangsbeschr(?:ä|ae)nkung(?:en)?\\b",
+      "\\bkontaktbeschr(?:ä|ae)nkung(?:en)?\\b",
+      "\\b2g\\b",
+      "\\b3g\\b",
+      "\\bimpf\\w*\\b"
+    ],
+    "A_SIGNALS": [
+      "§\\s*28a?\\s*ifsg",
+      "\\b28a\\b.*\\bifsg\\b",
+      "\\bschutzma(?:ß|ss)nahme(?:n)?\\b",
+      "\\buntersag(?:ung|en)\\b",
+      "\\bbetriebsschlie(?:ß|ss)ung(?:en)?\\b",
+      "\\bschlie(?:ß|ss)ungsanordnung(?:en)?\\b",
+      "\\bveranstaltungsverbot(?:e)?\\b",
+      "\\bkontaktverbot(?:e)?\\b",
+      "\\bmaskenpflicht\\b",
+      "\\btestpflicht\\b",
+      "\\bimpfpflicht\\b",
+      "\\bimpfschaden\\b"
+    ],
+    "B_SIGNALS": [
+      "\\bst(?:ö|oe)rung der gesch(?:ä|ae)ftsgrundlage\\b",
+      "§\\s*313\\s*bgb",
+      "\\bmiet(?:e|vertrag)\\b",
+      "\\bpacht\\b",
+      "\\bk(?:ü|ue)ndigung\\b",
+      "\\bleistungsst(?:ö|oe)rung\\b",
+      "\\bunm(?:ö|oe)glichkeit\\b",
+      "§\\s*275\\s*bgb",
+      "\\bverzug\\b",
+      "§\\s*286\\s*bgb"
+    ],
+    "C_SIGNALS": [
+      "\\bpandemiebedingt\\b",
+      "\\bcoronabedingt\\b",
+      "\\bwegen der corona[-\\s]?pandemie\\b",
+      "\\bvideoverhandlung\\b",
+      "\\btelefonkonferenz\\b",
+      "\\bhygienekonzept\\b",
+      "\\bfristverl(?:ä|ae)ngerung\\b"
+    ],
+    "PHRASES": [
+      "wegen der covid[-\\s]?19[-\\s]?pandemie",
+      "pandemiebedingte betriebsschlie",
+      "störung der geschäftsgrundlage.*pandemie",
+      "wegen der corona[-\\s]?pandemie",
+      "aufgrund der corona[-\\s]?pandemie",
+      "aufgrund der covid[-\\s]?19[-\\s]?pandemie"
+    ],
+    "GENERIC_B_TERMS": [
+      "\\bmiet(?:e|vertrag)\\b",
+      "\\bpacht\\b",
+      "\\bk(?:ü|ue)ndigung\\b",
+      "\\bverzug\\b",
+      "§\\s*313\\s*bgb",
+      "§\\s*275\\s*bgb",
+      "§\\s*286\\s*bgb"
+    ]
+  }
+}
