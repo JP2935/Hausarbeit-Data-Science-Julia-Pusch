@@ -24,3 +24,5 @@ Dieses Repository ergänzt die schriftliche Ausarbeitung. Die methodischen Detai
 
 ## Autorin
 Julia Pusch | Universität Regensburg | 6. Semester LL.B. Digital Law
+
+Hinweis: Die Ergebnisse der Analysen sind in den schriftlichen Kapiteln 4 und 5 der Hausarbeit im Detail dokumentiert und visualisiert. Die Jupyter Notebooks dienen der wissenschaftlichen Reproduzierbarkeit des Workflows.
