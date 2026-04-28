@@ -1,28 +1,23 @@
-# Hausarbeit Data Science and Text Mining
-# Analyse von BGH-Urteilen und EuGH-Urteilen zu Corona
+# Analyse-Repository
+# Thema der Hausarbeit: "Analyse von BGH-Urteilen und EuGH-Urteilen zu Corona"
 
-Dieses Repository enthält den vollständigen Programmcode zur computergestützten Textanalyse, die der  Hausarbeit von Julia Pusch zugrunde liegt. Ziel der Analyse ist die Identifikation thematischer Schwerpunkte und deren zeitliche Entwicklung in der höchstrichterlichen Rechtsprechung zur COVID-19-Pandemie (Zeitraum 2020-2025).
+Dieses Repository enthält den computerlinguistischen Analyse-Code und die Datengrundlage zur Untersuchung pandemiebezogener Entscheidungen des BGH und des EuGH für meine wissenschaftliche Hausarbeit zur Vorlesung Data Science und Text Mining. 
+
+## Über die Arbeit
+Im Rahmen meiner Hausarbeit wurde die höchstrichterliche Rechtsprechung zu pandemiebezogenen Fragestellungen (Zeitraum 2020–2025) systematisch erfasst. Ziel war es, mittels Legal NLP inhaltliche Schwerpunkte und zeitliche Dynamiken der Rechtsprechung datengestützt zu identifizieren.
 
 ## Repository-Struktur
-03_LDA_Modellierung.ipynb: Vorverarbeitung der Texte (Preprocessing), linguistische Normalisierung und initiale Themenmodellierung (LDA).
+Das Repository ist wie folgt gegliedert, um eine einfache Nachvollziehbarkeit der Analyse zu gewährleisten:
 
-04_NMF_Analyse.ipynb: Optimierte Themenmodellierung mittels NMF, Evaluation (Coherence Score) und finale Visualisierung der thematischen Evolution.
+/data/: Enthält die bereinigten Datensätze (urteile_cleaned.pkl und Urteile_Bereinigt.csv), die als Grundlage für die Modelle dienen.
 
-/data: (Hinweis: Die Rohdaten der Urteile sind aus datenschutzrechtlichen Gründen nicht Teil dieses öffentlichen Repositories).
+/scripts/: Beinhaltet die Jupyter Notebooks zur TF-IDF-Gewichtung, zur LDA- und zur NMF-Modellierung, sowie die Python-Skripte zur Vorfilterung des Korpus.
 
-## Technische Dokumentation 
-Die Analyse wurde in Jupyter Notebooks implementiert, um den Prozess interaktiv und wissenschaftlich nachvollziehbar zu gestalten.
+/config/: Enthält die Konfigurationsdatei zur Steuerung der Analyseparameter im Rahmen der TF-IDF-Gewichtung.
 
-Linguistische Pipeline: Verwendung von spaCy für POS-Tagging (Nomen/Eigennamen) und Lemmatisierung.
+Ferner beinhaltet das Repository noch eine requirements.txt zur einfacheren Reproduzierbarkeit.
 
-Vektorisierung: TF-IDF-Gewichtung mit gerichts-spezifischer Optimierung der max_df-Parameter zur Noise-Reduktion.
-
-Reproduzierbarkeit: Alle Parameter (Alpha/Eta-Werte, Iterationen, Keyword-Blacklists) sind innerhalb der Notebooks dokumentiert.
-
-## Bezug zur Hausarbeit 
-Dieses Repository ergänzt die schriftliche Ausarbeitung. Die methodischen Details, die Implementierung der Scoring-Logik sowie die juristische Interpretation der computerlinguistischen Ergebnisse sind in Kapitel 4 (Methodik) und Kapitel 5 (Ergebnisse) der Hausarbeit detailliert ausgeführt.
-
-## Autorin
+## Erstellerin
 Julia Pusch | Universität Regensburg | 6. Semester LL.B. Digital Law
 
-Hinweis: Die Ergebnisse der Analysen sind in den schriftlichen Kapiteln 4 und 5 der Hausarbeit im Detail dokumentiert und visualisiert. Die Jupyter Notebooks dienen der wissenschaftlichen Reproduzierbarkeit des Workflows.
+Hinweis: Eine detaillierte methodische Herleitung sowie die juristische Interpretation der Ergebnisse finden sich in der schriftlichen Ausarbeitung
