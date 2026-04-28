@@ -9,13 +9,13 @@ Im Rahmen meiner Hausarbeit wurde die höchstrichterliche Rechtsprechung zu pand
 ## Repository-Struktur
 Das Repository ist wie folgt gegliedert, um eine einfache Nachvollziehbarkeit der Analyse zu gewährleisten:
 
-/data/: Enthält die bereinigten Datensätze (urteile_cleaned.pkl und Urteile_Bereinigt.csv), die als Grundlage für die Modelle dienen.
+* /data/: Enthält die bereinigten Datensätze (urteile_cleaned.pkl und Urteile_Bereinigt.csv), die als Grundlage für die Modelle dienen.
 
-/scripts/: Beinhaltet die Jupyter Notebooks zur TF-IDF-Gewichtung, zur LDA- und zur NMF-Modellierung, sowie die Python-Skripte zur Vorfilterung des Korpus.
+* /scripts/: Beinhaltet die Jupyter Notebooks zur TF-IDF-Gewichtung, zur LDA- und zur NMF-Modellierung, sowie die Python-Skripte zur Vorfilterung des Korpus.
 
-/config/: Enthält die Konfigurationsdatei zur Steuerung der Analyseparameter im Rahmen der TF-IDF-Gewichtung.
+* /config/: Enthält die Konfigurationsdatei zur Steuerung der Analyseparameter im Rahmen der TF-IDF-Gewichtung.
 
-Ferner beinhaltet das Repository noch eine requirements.txt zur einfacheren Reproduzierbarkeit.
+* Ferner beinhaltet das Repository noch eine requirements.txt zur einfacheren Reproduzierbarkeit.
 
 ## Erstellerin
 Julia Pusch | Universität Regensburg | 6. Semester LL.B. Digital Law
